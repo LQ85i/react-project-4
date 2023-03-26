@@ -1,0 +1,26 @@
+.App {
+  text-align: center;
+}
+
+.header {
+  height: 40px;
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.gameboard {
+  border: 1px solid black;
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  
+}
+
+.card {
+  width: 150px;
+  height: 200px;
+  border: 1px solid black;
+}
