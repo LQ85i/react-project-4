@@ -8,16 +8,23 @@ function App() {
 
   const [score, setScore] = useState(0);
   const [highScore, setHighScore] = useState(0);
+  const [lastResult, setLastResult] = useState(0);
 
   return (
     <div className="content">
-      <Header score={score} highScore={highScore}/>
-      <GameBoard 
-      score={score} 
-      setScore={setScore}
-      highScore={highScore}
-      setHighScore={setHighScore}/>
-      <Footer/>
+      <Header
+        score={score}
+        highScore={highScore}
+        lastResult={lastResult}
+      />
+      <GameBoard
+        score={score}
+        setScore={setScore}
+        highScore={highScore}
+        setHighScore={setHighScore}
+        setLastResult={setLastResult}
+      />
+      <Footer />
     </div>
   );
 }

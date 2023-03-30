@@ -32,10 +32,12 @@ import {
     Zed
 } from "../images"
 import Card from "./Card";
+import uniqid from 'uniqid';
+
 
 const GameBoard = (props) => {
     const maxCards = 20;
-    const { score, setScore, highScore, setHighScore } = props;
+    const { score, setScore, highScore, setHighScore, setLastResult } = props;
     const [allCards, setAllCards] = useState({
         cards: [
             { name: "Ahri", src: Ahri },
@@ -107,9 +109,17 @@ const GameBoard = (props) => {
 
     const evaluateClick = (name) => {
         if (clickedCards.includes(name)) {
+            setLastResult({
+                result: "fail",
+                key: uniqid()
+            });
             setClickedCards([name]);
             setScore(1);
         } else {
+            setLastResult({
+                result: "success",
+                key: uniqid()
+            });
             let newArr = clickedCards
             newArr.push(name);
             setClickedCards(newArr);
@@ -130,6 +140,10 @@ const GameBoard = (props) => {
     const increaseDifficulty = () => {
         const cardCount = deck.cards.length;
         if(cardCount + 5 < maxCards){
+            setLastResult({
+                result: "level up",
+                key: uniqid()
+            });
             setDeck(createDeck(cardCount+5));
         }
     }
