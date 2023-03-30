@@ -30,7 +30,7 @@ import {
     Yasuo,
     Zac,
     Zed
-} from "./images/"
+} from "../images"
 import Card from "./Card";
 
 const GameBoard = (props) => {

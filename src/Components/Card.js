@@ -8,8 +8,8 @@ const Card = (props) => {
         return
     }
     return <div className="card" name={name} onClick={handleClick}>
-        <div className="title">{name}</div>
         <img src={src} alt="" className="img-card" />
+        <div className="title">{name}</div>
     </div>
 }
 export default Card;

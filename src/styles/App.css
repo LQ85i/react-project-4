@@ -1,35 +1,89 @@
-.App {
+.content {
   text-align: center;
+  background-color: rgba(0, 52, 148, 0.781);
+  min-height: 100vh;
+  height: 100%;
+  color: white;
+  display: grid;
+  grid-template-rows: min-content minmax(400px, 1fr) 20px;
 }
 
 .header {
-  height: 40px;
+  height: min-content;
   border: 1px solid black;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 10px;
+  background-color: rgba(0, 42, 179, 0.863);
+}
+
+.header .left {
+  font-size: 18px;
+  margin-left: 10px;
+  font-style: italic;
+  font-weight: bold;
+  display: flex;
+  height: 50px;
+}
+
+.header .logo {
+  width: 100px;
+  height: 50px;
+}
+
+.header .left .title {
+  align-self: center;
+  margin-left: 10px;
+}
+
+.header .right {
+  margin-right: 10px;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: bold;
 }
 
 .gameboard {
-  border: 1px solid black;
+  width: min(900px,100%);
   margin: 10px auto;
-  display: flex;
-  justify-content: center;
   display: grid;
-  grid-template-columns: repeat(5, 150px);
-  gap: 10px;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, 150px);
+  grid-template-rows: repeat(auto-fill, 210px);
+  gap: 15px;
 }
 
 .card {
   width: 150px;
-  height: 200px;
-  border: 1px solid black;
-  overflow: hidden;
+  height: 210px;
+  border: 1px solid rgba(0, 0, 0, 0.671);
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px black;
+  overflow: hidden;  
+}
+
+.card .title {
+  background-color: rgba(0, 27, 77, 0.781);
+  font-weight: bold;
+  margin-top: -4px;
+  padding-top: 5px;
+  letter-spacing: 1px;
+  height: 30px;
+}
+
+.card:active {
+  box-shadow: none;
+  margin-left: 1px;
+  margin-top: 1px;
 }
 
 .img-card {
   margin-left: -130px;
-  height: 181px;
-  object-fit: cover;
+  height: 180px;
+}
+
+.footer {
+  width: 100%;
+  background-color: rgba(0, 23, 100, 0.384);
 }
