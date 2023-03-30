@@ -23,4 +23,11 @@
   width: 150px;
   height: 200px;
   border: 1px solid black;
+  overflow: hidden;
+}
+
+.img-card {
+  margin-left: -130px;
+  height: 181px;
+  object-fit: cover;
 }
