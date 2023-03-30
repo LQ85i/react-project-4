@@ -28,4 +28,5 @@ export const Vayne = require('../images/Vayne.jpeg');
 export const Yasuo = require('../images/Yasuo.jpeg');
 export const Zac = require('../images/Zac.jpeg');
 export const Zed = require('../images/Zed.jpeg');
+
 export const Logo = require('../images/League-of-Legends-Logo-2008.png');
