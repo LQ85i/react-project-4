@@ -5,19 +5,17 @@ import { useState } from 'react';
 
 function App() {
 
-  const [state, setState] = useState({
-    score: 0,
-    highscore: 0,
-    cards: [{
-      imgTitle: "",
-      imgUrl: ""
-    }]
-  })
+  const [score, setScore] = useState(0);
+  const [highScore, setHighScore] = useState(0);
 
   return (
     <div className="App">
-      <Header/>
-      <GameBoard/>
+      <Header score={score} highScore={highScore}/>
+      <GameBoard 
+      score={score} 
+      setScore={setScore}
+      highScore={highScore}
+      setHighScore={setHighScore}/>
     </div>
   );
 }
