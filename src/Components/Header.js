@@ -13,6 +13,8 @@ const Header = (props) => {
             return <img key={Math.random()} className='icon fail' src={icon_fail} alt="" />
         } else if(lastResult.result === "level up") {
             return <div className="level-up">LEVEL UP!</div>
+        } else if(lastResult.result === "win") {
+            return <div className="win">YOU WIN!</div>
         }
     }
 
