@@ -139,7 +139,7 @@ const GameBoard = (props) => {
 
     const increaseDifficulty = () => {
         const cardCount = deck.cards.length;
-        if(cardCount + 5 < maxCards){
+        if(cardCount + 5 <= maxCards){
             setLastResult({
                 result: "level up",
                 key: uniqid()
