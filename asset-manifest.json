@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-project-4/static/css/main.b90dafb9.css",
-    "main.js": "/react-project-4/static/js/main.64aa2d73.js",
+    "main.js": "/react-project-4/static/js/main.d64d844c.js",
     "static/media/League-of-Legends-Logo-2008.png": "/react-project-4/static/media/League-of-Legends-Logo-2008.dfbe52592e203edac5e4.png",
     "static/media/Blitzcrank.jpeg": "/react-project-4/static/media/Blitzcrank.f1fed2a799ae22da3e35.jpeg",
     "static/media/Yasuo.jpeg": "/react-project-4/static/media/Yasuo.31ccdf938e3cc4039106.jpeg",
@@ -37,10 +37,10 @@
     "static/media/icon_fail.svg": "/react-project-4/static/media/icon_fail.4b6b86a3d42574b04138ca049d9b7902.svg",
     "static/media/icon_success.svg": "/react-project-4/static/media/icon_success.9fc1dbab6caa6d7dc57b3da7a95f12ed.svg",
     "main.b90dafb9.css.map": "/react-project-4/static/css/main.b90dafb9.css.map",
-    "main.64aa2d73.js.map": "/react-project-4/static/js/main.64aa2d73.js.map"
+    "main.d64d844c.js.map": "/react-project-4/static/js/main.d64d844c.js.map"
   },
   "entrypoints": [
     "static/css/main.b90dafb9.css",
-    "static/js/main.64aa2d73.js"
+    "static/js/main.d64d844c.js"
   ]
 }
