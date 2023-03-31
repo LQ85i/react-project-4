@@ -145,6 +145,11 @@ const GameBoard = (props) => {
                 key: uniqid()
             });
             setDeck(createDeck(cardCount+5));
+        } else {
+            setLastResult({
+                result: "win",
+                key: uniqid()
+            });
         }
     }
 
